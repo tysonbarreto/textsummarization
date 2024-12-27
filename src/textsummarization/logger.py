@@ -28,4 +28,4 @@ def Logger():
     return logging.getLogger('TextSummarizer')
 
 if __name__=="__main__":
-    __all__=["logger"]
+    __all__=["Logger"]

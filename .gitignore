@@ -172,3 +172,4 @@ cython_debug/
 artifacts/
 tests/
 logs/
+data/

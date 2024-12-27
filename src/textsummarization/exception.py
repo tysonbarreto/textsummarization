@@ -10,7 +10,7 @@ class TSException(Exception):
         self.filename = exec_tb.tb_frame.f_code.co_filename
 
     def __str__(self):
-        return f"Error occured in python script name {self.file_name} line number {self.lineno} error message {str(self.error_message)}"
+        return f"Error occured in python script name {self.filename} line number {self.lineno} error message {str(self.error_message)}"
     
 if __name__=="__main__":
     __all__=["TSException"]

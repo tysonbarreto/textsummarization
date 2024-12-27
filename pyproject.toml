@@ -5,7 +5,7 @@ description = "Default template for PDM package"
 authors = [
     {name = "", email = ""},
 ]
-dependencies = ["transformers>=4.47.1", "datasets>=3.2.0", "rouge-score>=0.1.2", "nltk>=3.9.1", "tqdm>=4.67.1", "pyYAML>=6.0.2", "matplotlib>=3.10.0", "torch>=2.5.1", "pandas>=2.2.3", "Jinja2>=3.1.5", "fastapi>=0.115.6", "uvicorn>=0.34.0", "python-box>=7.3.0"]
+dependencies = ["transformers>=4.47.1", "datasets>=3.2.0", "rouge-score>=0.1.2", "nltk>=3.9.1", "tqdm>=4.67.1", "pyYAML>=6.0.2", "matplotlib>=3.10.0", "torch>=2.5.1", "pandas>=2.2.3", "Jinja2>=3.1.5", "fastapi>=0.115.6", "uvicorn>=0.34.0", "python-box>=7.3.0", "ipykernel>=6.29.5", "tiktoken>=0.8.0", "protobuf>=5.29.2", "accelerate>=1.2.1", "evaluate>=0.4.3", "py7zr>=0.22.0"]
 requires-python = ">=3.12"
 readme = "README.md"
 license = {text = "MIT"}
