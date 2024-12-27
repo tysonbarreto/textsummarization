@@ -1,9 +1,19 @@
-artifacts_root: 'artifacts'
-
-data_ingestion:
-  root_dir: 'artifacts/data_ingestion'
-  source_dir: 'data/datasets'
-  file_name: 'test.zip'
+chat_summarization:
+  google_drive_folder: "/content/drive/TextSummarizer"
+  dataset: "Samsung/samsum"
+  task: "summarization"
+  metric: "rouge"
+  model_checkpoints: "facebook/bart-large-xsum"
+  max_input: 512
+  max_target: 128
+  batch_size: 32
+  learning_rate: 2e-5
+  weight_decay: 0.01
+  fp16: False
+  predict_params:
+    length_penalty: 0.8
+    num_beams: 8
+    max_length: 512
   
 
 
