@@ -33,5 +33,24 @@ def create_directories(directory_path:List[Path]):
 def get_size(file_path:Path):
     size_in_kb = round(os.path.getsize(file_path)/1024)
     logger.info(f"~ {size_in_kb} KB")
+
+
+def activate_root_directory():
+    if os.path.split(os.getcwd())[-1] == 'research':
+        os.chdir('..')
+        logger.info("Root directory is active")
+    else:
+        pass
+        logger.info("Root directory was active")
+
+def which_is_file_running():
+    try:
+        from google.colab import drive
+        IN_COLAB = True
+        logger.info("Running in Google Colab")
+    except:
+        IN_COLAB = False
+        logger.info("Running locally")
+
 if __name__=="__main__":
-    __all__ = ['read_yaml','create_directories','get_size']
+    __all__ = ['read_yaml','create_directories','get_size','activate_root_directory','which_is_file_running']

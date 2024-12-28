@@ -1,5 +1,5 @@
 chat_summarization:
-  google_drive_folder: "/content/drive/TextSummarizer"
+  google_drive_folder: "/content/drive/MyDrive/ColabNotebooks/TextSummarizer"
   dataset: "Samsung/samsum"
   task: "summarization"
   metric: "rouge"
